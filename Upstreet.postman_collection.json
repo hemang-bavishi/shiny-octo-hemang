@@ -1,0 +1,177 @@
+{
+	"info": {
+		"_postman_id": "487d5831-cd5f-4de9-93da-5606814d4bcf",
+		"name": "Upstreet",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Purchase",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "brand",
+							"value": "IndiaGate",
+							"type": "text"
+						},
+						{
+							"key": "logoOfBrand",
+							"type": "file",
+							"src": "/C:/Users/MTPC-137/Desktop/Images RX-life/3third.png"
+						},
+						{
+							"key": "amount",
+							"value": "500",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "Grocery",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "USA",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/purchase/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"purchase",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Purchase",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "brand",
+							"value": "IndiaGate",
+							"type": "text"
+						},
+						{
+							"key": "logoOfBrand",
+							"type": "file",
+							"src": "/C:/Users/MTPC-137/Desktop/Images RX-life/3third.png"
+						},
+						{
+							"key": "amount",
+							"value": "500",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "Grocery",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "USA",
+							"type": "text"
+						},
+						{
+							"key": "_id",
+							"value": "5fc9edb30a73d41bb43dadca",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/purchase/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"purchase",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Purchase List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/purchase/List?brand=IndiaGate&type=Grocery&location=USA&start=0&end=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"purchase",
+						"List"
+					],
+					"query": [
+						{
+							"key": "brand",
+							"value": "IndiaGate"
+						},
+						{
+							"key": "type",
+							"value": "Grocery"
+						},
+						{
+							"key": "location",
+							"value": "USA"
+						},
+						{
+							"key": "start",
+							"value": "0"
+						},
+						{
+							"key": "end",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "item list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/Item/List",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Item",
+						"List"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
